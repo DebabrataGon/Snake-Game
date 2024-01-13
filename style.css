@@ -1,0 +1,118 @@
+.container
+{
+    display: flex;
+    justify-content:center;
+    align-items:center; 
+    /*border: solid red;*/
+    height: 96vh;
+    flex-direction:row;
+}
+
+.board
+{
+    display: flex;
+    justify-content:center;
+    align-items:center; 
+    /*border: solid red;*/
+    flex-direction:column;
+}
+
+.game
+{
+    width:35vw;
+    height:35vw;
+    background-color:black;
+    margin: 2vh;
+
+    display: grid;
+    grid-template-rows:repeat(15, 1fr);
+    grid-template-columns:repeat(15, 1fr);
+    gap: 0.3vw;
+}
+
+.game > * {
+   background-color: green;
+  }
+
+  .control
+{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center; 
+    /*border: solid red;*/
+}
+
+.row1,.row3
+{
+    display: flex;
+    justify-content:center;
+    align-items:center; 
+}
+
+.up,.down
+{
+    height:4vh;
+    width:2vw;
+    padding:1vh;
+    margin:1vh;
+    background-color: blue;
+    color: aliceblue;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.row2
+{
+    display: flex;
+    justify-content:center;
+    align-items:center; 
+    flex-direction:row;
+}
+
+.left,.right
+{
+    height:4vh;
+    width:2vw;
+    padding:1vh;
+    margin:1vh;
+    background-color: blue;
+    color: aliceblue;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.mid
+{
+    padding:1vh;
+    margin:1vh;
+    background-color:white;
+    color:white;
+}
+
+.up:active,.down:active,.left:active,.right:active
+{
+    background-color: aquamarine;
+    color: black;
+}
+
+.score
+{
+    background-color:red;
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items:center; 
+    /*border: solid red;*/
+    flex-direction:column;
+}
+
+.value
+{
+    display: flex;
+    justify-content:center;
+    align-items:center; 
+    /*border: solid red;*/
+}
