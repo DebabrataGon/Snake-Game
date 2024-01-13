@@ -10,6 +10,7 @@
 
 .board
 {
+    height: 100%;
     display: flex;
     justify-content:center;
     align-items:center; 
@@ -21,6 +22,7 @@
 {
     width:35vw;
     height:35vw;
+    height:90%;
     background-color:black;
     margin: 2vh;
 
