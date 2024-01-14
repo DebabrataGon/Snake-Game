@@ -96,13 +96,13 @@
 
 .up:active,.down:active,.left:active,.right:active
 {
-    background-color: rgb(238, 208, 234);
+    background-color: skyblue;
     color: black;
 }
 
 .score
 {
-    background-color:red;
+    background-color:rgb(211, 11, 230);
     color: white;
     display: flex;
     justify-content:center;
