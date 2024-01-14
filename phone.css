@@ -1,0 +1,23 @@
+.cointainer
+{
+    width:100%;
+}
+.board
+{
+    width: 80%;
+}
+
+.game
+{
+    width:100%;
+    height: 70vw;
+}
+.score
+{
+    height: 10vw;
+}
+
+.up,.down,.left,.right
+{
+    background-color: rgb(76, 231, 205);
+}

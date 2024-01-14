@@ -22,7 +22,7 @@
 {
     width:35vw;
     height:35vw;
-    height:90%;
+    /*height:90%;*/
     background-color:black;
     margin: 2vh;
 
@@ -96,7 +96,7 @@
 
 .up:active,.down:active,.left:active,.right:active
 {
-    background-color: aquamarine;
+    background-color: rgb(238, 208, 234);
     color: black;
 }
 
