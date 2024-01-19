@@ -76,7 +76,8 @@ function move()
   //console.log(head);
   //console.log(Math.floor(head/gridSize));
   //console.log(displace[dir].row);
-  let head_index=snake_body[0];
+  let head_index=snake_body[0];// getting head value
+  // find the next row and column
   let row=Math.floor(head_index/gridSize) + displace[dir].row; //use floor
   if(row<0)
   {
@@ -105,24 +106,24 @@ function move()
   //console.log(column);
   //let temp=head_index;
   //grid_items[head_index].style.backgroundColor='blue';
-  head_index=row*gridSize+column;
-  grid_items[head_index].style.backgroundColor='red';
-  snake_body.unshift(head_index);
-  if(head_index==food_index)
+  head_index=row*gridSize+column; // the grid where head will go now
+  grid_items[head_index].style.backgroundColor='red'; //change color to new head position
+  snake_body.unshift(head_index); //add new head position at front
+  if(head_index==food_index)// if head is to me moved to food
   {
     score++;
     value.textContent=score;
     food_index=random_grid_index();
     grid_items[food_index].style.backgroundColor='yellow';
   }
-  else if(grid_indexes.has(head_index))
+  else if(grid_indexes.has(head_index)) // if head is to moved in some open space
   {
     let tail_index=snake_body.pop();// last index to be removed
     grid_indexes.delete(head_index); //particular value to be removed
     grid_indexes.add(tail_index);
     grid_items[tail_index].style.backgroundColor='green';
   }
-  else
+  else// if head touches body
   {
     clearInterval(myInterval);
   }
